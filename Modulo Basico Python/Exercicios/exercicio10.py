@@ -31,11 +31,7 @@ O primeiro dígito do CPF é 7
 import random
 import os 
 
-digi = ""
 
-for i in range(9):
-    digi += str(random.randint(0,9))
-    
 cpf_lista_1 = [1,4,7,3,4,5,1,1,0]
 produto_1 = []
 resultado_vazio_1 = 0
@@ -44,13 +40,17 @@ contador = 10
 
 
 os.system('cls')
+
 for numero in cpf_lista_1:
     produto_1 = [contador * numero]
     contador -= 1
+    
     for resultado in produto_1:
+        
         resultado_vazio_1 += resultado
 resultado_vazio_1 = resultado_vazio_1 * 10
 p_digito = resultado_vazio_1 % 11
+
 if p_digito > 9:
     p_digito = 0
     print(f'O primeiro digito do CPF é {p_digito}')
@@ -63,10 +63,13 @@ produto_2 = []
 resultado_vazio_2 = 0
 
 cpf_lista_2 = [1,4,7,3,4,5,1,1,0,8]
+
 for numero_2 in cpf_lista_2:
     produto_2 = [contador_2 * numero_2]
     contador_2 -= 1
+    
     for resultado_2 in produto_2:
+        
         resultado_vazio_2 += resultado_2
 resultado_vazio_2 = resultado_vazio_2 * 10
 s_digito = resultado_vazio_2 % 11

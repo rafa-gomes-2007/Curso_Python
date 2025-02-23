@@ -1,8 +1,8 @@
 
-
+# Demonstração de loop infinito
 
 nome = 'Rafael Gomes'
-inico = -1
+inico = 1
 fim = 0
 
 while nome:

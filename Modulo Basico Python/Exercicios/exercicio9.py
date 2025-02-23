@@ -1,3 +1,4 @@
+# Algoritmo que monta uma lista de valores onde se pode apagar, excluir e adicionar 
 
 import os 
 

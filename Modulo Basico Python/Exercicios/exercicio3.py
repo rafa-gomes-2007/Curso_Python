@@ -1,3 +1,5 @@
+# manipular dados str
+
 """
 Exercício
 Peça ao usuário para digitar seu nome
